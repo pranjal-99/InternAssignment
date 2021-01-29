@@ -1,0 +1,197 @@
+html {
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+  width: 100%;
+  background: #262525;
+  color: white;
+}
+
+@keyframes rotate{
+  0%{transform: rotateY(0deg);
+    color:black;}
+  100%{transform: rotateY(360deg);
+    color:#3cd7e7;}
+}
+
+/* Navbar Css */
+.navbar {
+  height:60px;
+  width:100%;
+  background-color: transparent;
+  text-align: center;
+}
+
+.loginText {
+  position: absolute;
+  top: 16px;
+  left: 45px;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #3cd7e7;
+}
+
+/* Content Css */
+.heading {
+  color:#3cd7e7;
+}
+.content {
+  text-align: center;
+  margin-top: 5px;
+}
+.textAnimation {
+  width: 27px;
+  height:25px;
+  font-size:2rem ;
+  font-weight: bolder;
+  background-color:transparent;
+  display: inline-block;
+  position: relative;
+}
+div.textAnimation:hover{
+  animation: rotate linear 1s;
+}
+
+/* Login Page */
+.loginPage {
+  height:100%;
+  width: 100%;
+  background-color:rgba(23,67,88,0.5);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.popup {
+  border-radius: 10px;
+  width:500px;
+  height: 350px;
+  background-color: white;
+  text-align: center;
+}
+.form input {
+  width:50% ;
+  display: block;
+  margin: 15px auto!important;
+}
+.close {
+  cursor: pointer;
+  position: relative;
+  right: -225px;
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+}
+
+/* Admin Page */
+.admin{
+  padding-top: 5px;
+}
+.admin #text {
+  width: 510px;
+  height: 250px;
+    border: solid 5px;
+    border-radius: 10px;
+    resize: none;
+    font-size: x-large;
+}
+.admin #button {
+  text-align: center;
+  position: relative;
+  top: -20px;
+  left: -100px;
+}
+.admin h1{
+  text-align: center;
+  position: relative;
+  bottom: 23px;
+}
+.admin label {
+  
+  text-align: center;
+  position: relative;
+    bottom: 222px;
+    left: 475px;
+    font-weight: bold;
+
+}
+.admin button{
+  
+  text-align: center;
+  position: relative;
+  bottom: 135px;
+    right: -100px;
+    width: 90px;
+
+}
+.admin input{
+  
+  text-align: center;
+  bottom: 189px;
+    left: 320px;
+}
+.cards {
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y:scroll; 
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  margin:26.5px;
+  background-color: #a4a7a6;
+}
+.cards p{
+  position: absolute;
+    left: 1%;
+    right: 1%;
+    overflow-wrap: break-word;
+    color: black;
+}
+.editIcon {
+  position: relative;
+  right: 70px;
+  top: 10px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: larger;
+  cursor: pointer;
+  color: #b6a90b;
+}
+.saveIcon {
+  position: relative;
+  right: 70px;
+  top: 10px;
+  display: none;
+  font-weight: 700;
+  font-size: larger;
+  cursor: pointer;
+  color: #b6a90b;
+}
+.forAnimation {
+  cursor: pointer;
+}
+.cards::-webkit-scrollbar {
+  width: 5px;
+  }
+  
+  .cards::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px whitesmoke; 
+  border-radius: 10px;
+  }
+  
+  .cards::-webkit-scrollbar-thumb {
+  background:#495054; 
+  border-radius: 10px;
+  }
+  .editSave{
+    display: block!important;
+    background-color: whitesmoke;
+    height: 45px;
+  }
